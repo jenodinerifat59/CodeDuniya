@@ -3,7 +3,7 @@ import Contener from '../components/Contener.jsx'
 import Image from '../components/Image.jsx'
 const CtagoryItem = ({aitems}) => {
   return (
-    <div className="">
+    <div>
   
          <div className='bg-third max-w-[230px] text-center rounded-2xl pt-3.5 mx-auto'>
         <Image src={aitems.icon} alt='icon' className='mx-auto'/>

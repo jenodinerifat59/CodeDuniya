@@ -30,6 +30,14 @@ const Catagory = () => {
             icon: Icon4,
         },
         {
+            name: "গ্রাফিকস",
+            icon: Icon1,
+        },
+        {
+            name: "নেটওয়ার্কিং",
+            icon: Icon2
+        },
+        {
             name: "সফটওয়্যার",
             icon: Icon3,
         },
@@ -108,7 +116,7 @@ const Catagory = () => {
     };
 
     return (
-        <section>
+        <section className='absolute w-full top-[-100px]'>
             <Contener>
                 <Slider {...settings}>
 
