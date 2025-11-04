@@ -99,10 +99,6 @@ const Catagory = () => {
         );
     }
 
-
-
-
-
     var settings = {
         dots: false,
         infinite: true,

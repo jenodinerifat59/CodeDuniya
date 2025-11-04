@@ -4,6 +4,7 @@ import NavItem from './layouts/navItem.jsx'
 import Hero from './layouts/Hero.jsx'
 import Catagory from './layouts/Catagory.jsx'
 import Courses from './layouts/Courses.jsx'
+import Reviewe from './layouts/reviewe.jsx'
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
        <Catagory />
    </div>
    <Courses/>
-
+   <Reviewe/>
   </header>
   )
 }
