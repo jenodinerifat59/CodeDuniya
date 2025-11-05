@@ -86,7 +86,7 @@ let showcard = card.slice(0,courseCount)
           )) 
          }
         </div>
-         <Button onClick={showall} className='py-1 px-[58px] bg-[#415A77] rounded-[10px] text-white text-2xl font-semibold mx-auto block mt-12 '
+         <Button onClick={showall} className='py-1 px-[58px] bg-sec rounded-[10px] text-white text-2xl font-semibold mx-auto block mt-12 '
          
           Items ={courseCount===3 ? "আরও কোর্স দেখুন" : "আগের অবস্থানে যাই"}
          />
