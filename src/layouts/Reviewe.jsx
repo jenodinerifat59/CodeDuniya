@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef  } from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import Contener from '../components/Contener'
 import RevieweC from '../components/RevieweC.jsx'
 import Titale from '../components/Titale.jsx';
-
+import Button from "../components/Button.jsx"
 const Reviewe = () => {
     let rev = [
         {
@@ -45,33 +45,53 @@ const Reviewe = () => {
 
     ]
 
- 
-        var settings = {
-            dots: true,
-            infinite: false,
-            speed: 500,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            initialSlide: 0,
-            
+    let sliderRef = useRef(null);
+
+
+    var settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        initialSlide: 0,
+       
     }
+    
         return (
             <div>
                 <Contener>
                     <div className='mt-[93px] mb-[55px]'>
-                        <Titale head_title="কেন আমরাই সেরা" sub_title='কেন আপনি আমাদের লার্নার হবেন '/>
+                        <Titale head_title="কেন আমরাই সেরা" sub_title='কেন আপনি আমাদের লার্নার হবেন ' />
                     </div>
-                    <Slider {...settings}>
+                    <Slider
+                     ref={sliderRef }
+                     {...settings}>
 
-                    {
-                        rev.map((aaa) => (
-                            <RevieweC rItem={aaa} />
-                        ))
-                    }
+                        {
+                            rev.map((aaa, i) => (
+                                <RevieweC rItem={aaa} key={i}/>
+                            ))
+                        }
                     </Slider>
+
+                    <div className= "text-center mt-9 " >
+
+                        <Button className="bg-third text-white py-1 px-4 rounded-2xl mr-3 " onClick={() => {
+                            sliderRef.current.slickPrev();
+                        }} Items="previous" />
+
+                        <Button className="bg-third text-white py-1 px-4 rounded-2xl " onClick={() => {
+                            sliderRef.current.slickNext();
+                        }} Items="next" />
+
+
+
+
+                    </div>
                 </Contener>
             </div>
         )
-    }
+}
 
-    export default Reviewe
+export default Reviewe
