@@ -6,6 +6,17 @@ import Button from '../components/Button.jsx'
 import ListItems from '../components/ListItems.jsx'
 import Image from '../components/Image.jsx'
 import logo from '../assets/iamges/logo.png'
+import { IoIosSend } from "react-icons/io"
+import { MdAddIcCall } from "react-icons/md"
+import { IoIosMail } from "react-icons/io"
+import { FaXTwitter } from "react-icons/fa6"
+import { FaYoutube } from "react-icons/fa"
+import { FaLinkedin } from "react-icons/fa"
+import { FaFacebookSquare } from "react-icons/fa"
+
+
+
+
 const Addmission = () => {
   return (
     <div className=' bg-primary text-white pt-4'>
@@ -22,9 +33,19 @@ const Addmission = () => {
           <div>
             <h5 className=" font-Anik font-semiBold text-2xl ">আমাদের ঠিকানা</h5>
             <div className='list-none'>
-              <ListItems Items="২৮ / ২, মেহের প্লাজা, ধানমন্ডি, ঢাকা"/>
-            <ListItems Items="+৮৮ ০১৭১৫৫৫৭৮৯৬"/>
-            <ListItems Items="info@codeduniya.com"/>
+             <Flex className='gap-2'>
+                <IoIosSend />
+                <ListItems Items="২৮ / ২, মেহের প্লাজা, ধানমন্ডি, ঢাকা"/>
+             </Flex>
+            <Flex className='gap-2'>
+              <MdAddIcCall />
+
+              <ListItems Items="+৮৮ ০১৭১৫৫৫৭৮৯৬"/>
+            </Flex>
+            <Flex className='gap-2'>
+              <IoIosMail />
+              <ListItems Items="info@codeduniya.com"/>
+            </Flex>
             </div>
           </div>
           <div>
@@ -57,6 +78,12 @@ const Addmission = () => {
           <Image className="block mx-auto" src={logo}/>
           <h3 className='font-Anik font-normal text-[36px] mt-2'>দেশের সর্ববৃহৎ আইটি ট্রেনিং প্লাটফর্ম</h3>
         </div>
+        <Flex className='gap-5 justify-center mt-3 pb-20'>
+           <FaFacebookSquare className='w-10 h-10 cursor-pointer'/>
+           <FaLinkedin className='w-10 h-10 cursor-pointer'/>
+           <FaYoutube className='w-10 h-10 cursor-pointer'/>
+           <FaXTwitter className='w-10 h-10 cursor-pointer'/>
+        </Flex>
       </Contener>
     </div>
   )
