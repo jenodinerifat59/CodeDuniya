@@ -55,16 +55,53 @@ const Reviewe = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         initialSlide: 0,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+      {
+        breakpoint: 300,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+        }
+      }
+        ]
        
     }
     
         return (
             <div>
                 <Contener>
-                    <div className='mt-[93px] mb-[55px]'>
+                    <div className='mt-[50px] md:mt-[93px] mb-10 md:mb-[55px]'>
                         <Titale head_title="কেন আমরাই সেরা" sub_title='কেন আপনি আমাদের লার্নার হবেন ' />
                     </div>
-                    <Slider
+                   
+                        <Slider 
                      ref={sliderRef }
                      {...settings}>
 
@@ -74,14 +111,15 @@ const Reviewe = () => {
                             ))
                         }
                     </Slider>
+                    
 
                     <div className= "text-center mt-9 " >
 
-                        <Button className="bg-third text-white py-1 px-4 rounded-2xl mr-3 " onClick={() => {
+                        <Button className=" bg-third text-white py-1 px-4 rounded-2xl mr-3 " onClick={() => {
                             sliderRef.current.slickPrev();
                         }} Items="previous" />
 
-                        <Button className="bg-third text-white py-1 px-4 rounded-2xl " onClick={() => {
+                        <Button className=" bg-third text-white py-1 px-4 rounded-2xl " onClick={() => {
                             sliderRef.current.slickNext();
                         }} Items="next" />
 

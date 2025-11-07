@@ -30,10 +30,10 @@ const Success = () => {
     return (
         <section>
             <Contener>
-                <div className='mt-[118px]'>
+                <div className='mt-20 md:mt-[118px]'>
                     <Titale head_title="আমাদের সফলতার গল্পগুলো" sub_title="আমাদের হাতে তৈরি হওয়া প্রতিটি নক্ষত্র" />
                 </div>
-                <div className='grid grid-cols-2 gap-4 mt-[90px]'>
+                <div className='grid grid-cols-2 gap-2 md:gap-4 mt-[50px] md:mt-[90px]'>
                   {
                     show.map((item)=>(
                         <Iframe Iitems = {item}/>

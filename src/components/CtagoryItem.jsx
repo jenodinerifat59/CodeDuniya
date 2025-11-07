@@ -5,9 +5,9 @@ const CtagoryItem = ({aitems}) => {
   return (
     <div>
   
-         <div className='bg-third max-w-[230px] text-center rounded-2xl pt-3.5 mx-auto'>
+         <div className='bg-third max-w-[230px] text-center rounded-2xl pt-2 md:pt-3.5 mx-auto'>
         <Image src={aitems.icon} alt='icon' className='mx-auto'/>
-        <h3 className='text-2xl text-white font-semibold mt-2.5 pb-8'>{aitems.name}</h3>
+        <h3 className='text-2xl text-white font-semibold mt-1.5 md:mt-2.5 pb-4 md:pb-8'>{aitems.name}</h3>
     </div>
     
     </div>

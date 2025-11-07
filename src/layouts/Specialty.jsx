@@ -7,11 +7,11 @@ import Speciality from '../assets/iamges/speciality.png'
 import Image from '../components/Image.jsx'
 const Specialty = () => {
   return (
-    <section className='mt-[186px]'>
+    <section className='mt-20 md:mt-[186px]'>
       <Contener>
-        <Flex className='justify-around '>
+        <Flex className='justify-around  flex-col md:flex-row '>
      
-            <Image className="h-[378px]" src={Speciality} alt='speciality img'/>
+            <Image className="max-h-[378px]" src={Speciality} alt='speciality img'/>
            
             <div>
                 <Titale head_title ="আমাদের ক্লাসের বিশেষত্ব"/>

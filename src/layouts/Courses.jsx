@@ -76,17 +76,17 @@ const Courses = () => {
 
 let showcard = card.slice(0,courseCount)
   return (
-    <div className='mt-[170px]'>
+    <div className='mt-[90px] md:mt-[170px]'>
       <Contener>
         <Titale head_title='আমাদের কোর্স সমুহ' sub_title='আমাদের সমস্ত কোর্স সুদক্ষ মেন্টর দ্বারা পরিচালিত  এবং সমৃদ্ধ রিসোর্স দ্বারা পরিপূর্ণ' />
-        <div className='grid grid-cols-3 gap-6 '>
+        <div className='grid grid-cols-1 sm:grid-cols-2 max-w-fit md:grid-cols-3 gap-3 md:gap-6 '>
           {
           showcard.map((Citem) => (
             <Card course ={Citem}/>
           )) 
          }
         </div>
-         <Button onClick={showall} className='py-1 px-[58px] bg-sec rounded-[10px] text-white text-2xl font-semibold mx-auto block mt-12 '
+         <Button onClick={showall} className='py-1 px-11 md:px-[58px] bg-sec rounded-[10px] text-white text-xl md:text-2xl font-semibold mx-auto block mt-8 md:mt-12 '
          
           Items ={courseCount===3 ? "আরও কোর্স দেখুন" : "আগের অবস্থানে যাই"}
          />

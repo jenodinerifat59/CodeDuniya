@@ -5,8 +5,8 @@ const Titale = ({head_title , sub_title}) => {
   return (
     <div className='text-center'>
       
-      <h2 className='font-bold text-[36px] mb-4'>{head_title}</h2>
-      <p className= 'font-medium text-xl'>{sub_title}</p>  
+      <h2 className='font-medium sm:font-semibold md:font-bold text-[36px] mb-2 md:mb-4'>{head_title}</h2>
+      <p className= 'font-normal md:font-medium text-xl'>{sub_title}</p>  
       
     </div>
   )
