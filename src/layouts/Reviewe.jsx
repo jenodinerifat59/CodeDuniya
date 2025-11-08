@@ -83,7 +83,7 @@ const Reviewe = () => {
         }
       },
       {
-        breakpoint: 800,
+        breakpoint: 850,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -100,7 +100,7 @@ const Reviewe = () => {
                     <div className='mt-[50px] md:mt-[93px] mb-10 md:mb-[55px]'>
                         <Titale head_title="কেন আমরাই সেরা" sub_title='কেন আপনি আমাদের লার্নার হবেন ' />
                     </div>
-                   
+                    <div className='grig grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
                         <Slider 
                      ref={sliderRef }
                      {...settings}>
@@ -111,6 +111,7 @@ const Reviewe = () => {
                             ))
                         }
                     </Slider>
+                    </div>
                     
 
                     <div className= "text-center mt-9 " >

@@ -9,7 +9,7 @@ const Specialty = () => {
   return (
     <section className='mt-20 md:mt-[186px]'>
       <Contener>
-        <Flex className='justify-around  flex-col md:flex-row '>
+        <Flex className='justify-around  flex-col lg:flex-row '>
      
             <Image className="max-h-[378px]" src={Speciality} alt='speciality img'/>
            

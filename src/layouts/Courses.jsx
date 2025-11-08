@@ -79,7 +79,7 @@ let showcard = card.slice(0,courseCount)
     <div className='mt-[90px] md:mt-[170px]'>
       <Contener>
         <Titale head_title='আমাদের কোর্স সমুহ' sub_title='আমাদের সমস্ত কোর্স সুদক্ষ মেন্টর দ্বারা পরিচালিত  এবং সমৃদ্ধ রিসোর্স দ্বারা পরিপূর্ণ' />
-        <div className='grid grid-cols-1 sm:grid-cols-2 max-w-fit md:grid-cols-3 gap-3 md:gap-6 '>
+        <div className='grid grid-cols-1 md:grid-cols-2 max-w-fit lg:grid-cols-3 gap-3 md:gap-6 mx-auto  '>
           {
           showcard.map((Citem) => (
             <Card course ={Citem}/>
