@@ -88,9 +88,7 @@ const Catagory = () => {
                     padding: "30px",
                     fontSize: "50px",
                     background: "#1B263B",
-                    zIndex: 10,
-                    cursor: "pointer",
-                    fontSize : "40px",
+                   
                 }}
                 onClick={onClick}
             >
