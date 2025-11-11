@@ -2,7 +2,7 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Image from '../components/Image.jsx'
+// import Image from '../components/Image.jsx'
 import Icon1 from '../assets/iamges/icon/icon-park-solid_graphic-design.svg'
 import Icon2 from '../assets/iamges/icon/Vector.svg'
 import Icon3 from '../assets/iamges/icon/eos-icons_software.svg'
