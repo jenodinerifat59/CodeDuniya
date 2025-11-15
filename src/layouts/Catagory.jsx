@@ -62,9 +62,6 @@ const Catagory = () => {
                     borderRadius: "20%",         
                     cursor: "pointer",
                     background: "#1B263B",
-                    zIndex: 10,
-                    fontSize: "30px",
-                    fontSize : "40px",
                 }}
 
                 onClick={onClick}
